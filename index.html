@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Carpeta de instalación y mantenimiento del primer cuatrimestre</title>
+<style>
+:root{--bg:#2b2e34;--card:#33363d;--box:#2a2c32;--tbl:#202226;--line:#464a53;--txt:#e4e5e8;--mut:#a9acb4;--ora:#f5a623;--grn:#4cc38a;--pur:#7b82d6;--tab:#4a4f5a}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--txt);font:14px/1.6 "Segoe UI",system-ui,sans-serif}
+header{position:sticky;top:0;z-index:10;background:#2f3238;box-shadow:0 2px 8px rgba(0,0,0,.4);padding:14px 16px 12px;text-align:center}
+header h1{margin:0;font-size:22px;color:#fff}
+header h2{margin:4px 0 8px;font-size:13px;color:var(--ora);text-transform:uppercase;letter-spacing:.3px}
+.meta{font-size:11.5px;color:var(--mut);display:flex;gap:18px;justify-content:center;flex-wrap:wrap;max-width:560px;margin:0 auto;padding-bottom:10px;border-bottom:1px solid var(--line)}
+.meta b{color:#c9ccd3}
+nav{display:flex;gap:10px;justify-content:center;margin-top:10px}
+nav button{background:var(--tab);color:#fff;border:0;border-radius:4px;padding:6px 14px;font:bold 12px "Segoe UI",sans-serif;cursor:pointer}
+nav button.on{background:var(--pur)}
+nav button:focus-visible,#volver:focus-visible{outline:2px solid #fff;outline-offset:2px}
+main{max-width:578px;margin:0 auto;padding:10px 12px 60px}
+.mes{display:none;scroll-margin-top:var(--hh,150px)}
+.mes.on{display:block}
+.card{background:var(--card);border-radius:8px;padding:20px;margin:14px 0}
+.card .f{color:var(--grn);font-weight:700;font-size:15px;margin:0 0 12px;padding-bottom:8px;border-bottom:1px solid var(--line)}
+.card h3{color:var(--ora);font-weight:400;font-size:17px;margin:0 0 12px}
+.card p{margin:0 0 12px}
+.card ol,.card ul{margin:0 0 12px;padding-left:20px}
+.ans{background:var(--box);border-left:4px solid var(--pur);border-radius:0 6px 6px 0;padding:14px 18px;margin:14px 0}
+.ans p{margin:0 0 14px}
+.ans>:last-child{margin-bottom:0}
+.ans ul{margin:0}
+table{width:100%;border-collapse:collapse;background:var(--card);border:1px solid var(--line);border-radius:6px;margin:12px 0;font-size:13.5px}
+th,td{border:1px solid var(--line);padding:10px 12px;text-align:left;vertical-align:middle}
+th{background:var(--tbl);color:#fff}
+table.t td:first-child{width:22%}
+.img{display:block;max-width:600px;width:100%;margin:14px auto;border-radius:6px}
+.ph{aspect-ratio:16/9;border:2px dashed var(--line);display:flex;align-items:center;justify-content:center;text-align:center;color:var(--mut);font-size:12px;padding:10px}
+.nota{border-left:4px solid var(--ora)}
+.nota .f{color:var(--ora);border:0;padding:0}
+.fin{background:#202226;text-align:center}
+.fin .f{color:var(--pur);border:0}
+code{background:#202226;padding:1px 5px;border-radius:3px;font-size:12px}
+#volver{position:fixed;right:18px;bottom:18px;z-index:20;background:var(--pur);color:#fff;border:0;border-radius:22px;padding:10px 18px;font:bold 13px "Segoe UI",sans-serif;cursor:pointer;box-shadow:0 3px 10px rgba(0,0,0,.45)}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<header>
+  <h1>Carpeta de instalación y mantenimiento del primer cuatrimestre</h1>
+  <h2>Materia: Instalación y mantenimiento de Hardware y Software III</h2>
+  <div class="meta"><span><b>Período:</b> marzo - junio</span><span><b>Escuela:</b> Comercio n°2</span><span><b>Profesor:</b> Romano Andrés</span><span><b>Curso:</b> 5°1</span></div>
+  <nav>
+    <button class="on" data-m="marzo">Marzo</button><button data-m="abril">Abril</button><button data-m="mayo">Mayo</button><button data-m="junio">Junio</button>
+  </nav>
+</header>
+
+<main>
+<!-- ===================== MARZO ===================== -->
+<section class="mes on" id="marzo">
+
+<div class="card">
+<div class="f">Fecha: __/03/26</div><!-- COMPLETAR: la fecha de esta tarjeta no se veía en el video -->
+<h3>Etapa de diagnóstico</h3>
+<p><b>Responder las siguientes preguntas:</b></p>
+<ol>
+<li>Definan sistema operativo</li>
+<li>Diferencias entre memoria RAM y ROM</li>
+<li>Mencionar 2 ejemplos de mantenimiento preventivo en software</li>
+<li>Mencione las herramientas de un técnico</li>
+<li>¿Qué debería tener en cuenta antes de actualizar un dispositivo?</li>
+<li>Describan qué es backup o copia de seguridad</li>
+</ol>
+<div class="ans">
+<p><b>Respuestas:</b></p>
+<p><b>1)</b> Un sistema operativo es un conjunto de programas que trabajan en conjunto para el funcionamiento del dispositivo, así mismo también controla y utiliza el hardware.</p>
+<p><b>2)</b> La RAM (Random Access Memory o Memoria de Acceso Aleatorio) es un componente de almacenamiento que funciona de manera volátil, en resumen, se eliminan sus datos una vez que se corta el suministro eléctrico, guarda los datos de acceso aleatorio. La ROM, en cambio, guarda datos de forma permanente, por ejemplo los datos del fabricante.</p>
+<p><b>3)</b> Actualizar los drivers y ejecutar un antivirus cada cierto tiempo.</p>
+<p><b>4)</b> Tester, Multímetro, cinta aislante, cinta de papel, pulsera antiestática, desatornillador philips, punta estrella, punta plana, regla, pasta térmica, goma de borrar, cuaderno, lapicera, corrector, marcador, alcohol isopropílico, algodón, hisopos, tarjeta, desatornillador crick, disco duro portable, pendrive, pendrive booteable y linterna.</p>
+<p><b>5)</b> Realizar una copia de seguridad y verificar que tenga el suministro eléctrico necesario para toda la descarga.</p>
+<p><b>6)</b> Simple y llanamente es un respaldo de datos del SO.</p>
+<p><i>Nota Personal: 8.75</i></p>
+</div>
+</div>
+
+<div class="card">
+<div class="f">Fecha: 06/03/26</div>
+<h3>Actividad de diagnóstico</h3>
+<p><b>Responder las siguientes preguntas:</b></p>
+<ol>
+<li>¿En cuántas partes se divide la placa madre? Mencione cada una</li>
+<li>¿Por qué Windows se instala por defecto en la partición “C”?</li>
+<li>¿Cuál es la diferencia entre actualización de software y sistema operativo?</li>
+<li>Describan los pasos para preparar un pendrive booteable</li>
+<li>¿Cómo se accede al BIOS para cambiar el orden de arranque?</li>
+</ol>
+<div class="ans">
+<p><b>Respuestas:</b></p>
+<p><b>1)</b> La placa madre se divide en: Puerto Norte y Puerto Sur.<br>El Puerto Norte abarca: CPU, RAM, Tarjeta Gráfica, etc (Componentes de alto rendimiento).<br>El Puente Sur abarca: Almacenamientos (HDD, SSD, etc), puertos USB, audio, red, etc. (Encargada de los periféricos y dispositivos de entrada/salida).</p>
+<p><b>2)</b> Se instala en la partición “C” por el simple hecho de que “A” y “B” están destinadas a otros disquette.</p>
+<p><b>3)</b> La actualización de software abarca cambios o mejoras en programas específicos (Navegadores, aplicaciones, videojuegos, etc) y en el caso del SO que controla todo el hardware y coordina los programas. Su diferencia principal es que el SO afecta al entorno y gestión completo del equipo, el software es algo más “menor”.</p>
+<p><b>4) Cómo preparar un pendrive booteable (con Rufus):</b><br>- Insertamos el pendrive.<br>- Ejecutamos el archivo .exe de Rufus.<br>- Seleccionamos la imagen ISO (previamente instalada).<br>- Iniciamos el proceso (en caso de que no toquemos las configuraciones demos predeterminado).<br>- Esperamos que termine el proceso (el programa te avisará).<br>- Quitamos el pendrive booteable.<br>¡Disfrutamos!</p>
+<p><b>5) Pasos para acceder al BIOS:</b><br>1- Apenas se enciende el equipo, presionamos F2, F10 o Suprimir(eliminar).<br>2- Entramos al BIOS.<br>3- Buscamos “Boot”.<br>4- Allí podremos seleccionar qué dispositivo arranca primero.<br>5- Guardamos los cambios con F10.</p>
+</div>
+</div>
+
+<div class="card">
+<div class="f">Fecha: 11/3/26</div>
+<h3>Aviso</h3>
+<p>Repasar para la próxima clase los componentes internos de un PC y su funcionamiento. “Tipos de Memoria RAM y Placa Madre.”</p>
+</div>
+
+<div class="card">
+<div class="f">Fecha: 13/3/26</div>
+<h3>Diagnóstico (Trabajo Grupal)</h3>
+<ol>
+<li>Seleccionar una revista de técnico PC, que se encuentra en el classroom.</li>
+<li>Luego de leerla realizar un breve reporte sobre la misma, para luego exponerla en clase (Tiempo de la actividad: 30m)</li>
+</ol>
+<p><b>Revista elegida:</b> “Periféricos: Teclado, Mouse y Parlantes, N°22”</p>
+<p><b>Integrantes:</b> Quirós Benjamín, González Agustín, Navarro Mateo</p>
+</div>
+
+<div class="card">
+<div class="f">Fecha: 20/3/26</div>
+<h3>Diagrama del funcionamiento detallado del ordenador</h3>
+<p><b>1. Entrada de datos</b> - El usuario ingresa datos a través de dispositivos de entrada (Teclado, Mouse, etc). Los datos ingresados se envían al Procesador para su procesamiento.</p>
+<p><b>2. Procesador (CPU)</b> - Recibe instrucciones y datos del “Sistema Operativo” y de los programas. Ejecuta instrucciones y realiza cálculos. Almacena resultados en la “memoria RAM”.</p>
+<p><b>3. Memoria RAM</b> - Almacena datos y programas temporalmente mientras el ordenador está encendido. Proporciona acceso rápido a los datos y programas que el procesador necesita.</p>
+<p><b>4. Disco Duro (HD) o Unidad de Estado Sólido (SSD)</b> - Almacena datos y programas a largo plazo. Proporciona almacenamiento permanente para el sistema operativo, programas y archivos.</p>
+<p><b>5. Tarjeta Gráfica</b> - Procesa imágenes y vídeos para su visualización en la pantalla. Recibe instrucciones del “procesador” y envía la imagen procesada a la pantalla.</p>
+<p><b>6. Salida de datos</b> - Los resultados procesados se envían a dispositivos de salida (pantalla, impresora, etc.). El usuario puede ver los resultados en pantalla o imprimirlos.</p>
+<p><b>7. Sistema Operativo</b> - Gestión de los recursos del ordenador y proporciona una interfaz de usuario. Coordina la ejecución de programas y el acceso a los dispositivos de hardware.</p>
+<p><b>Conexiones:</b><br>Procesador → Memoria RAM: El procesador accede a los datos y programas almacenados en la memoria RAM.<br>Memoria RAM → Disco Duro (HD) o SSD: La memoria RAM carga datos y programas desde el disco duro o SSD.<br>Procesador → Tarjeta gráfica (GPU): El procesador envía instrucciones a la tarjeta gráfica para procesar imágenes y video.<br>Tarjeta gráfica → Pantalla: La tarjeta gráfica envía las imágenes procesadas a la pantalla para su visualización.</p>
+</div>
+
+<div class="card">
+<div class="f">Fecha: 27/03/26</div>
+<h3>Microprocesador (Actividad Individual)</h3>
+<p>Realizar un mapa conceptual que contenga: Funcionalidad, características, compatibilidad, velocidad, etc. Sobre el microprocesador.</p>
+<table>
+<tr><th>Funcionalidad</th><th>Características</th><th>Compatibilidad</th></tr>
+<tr><td>Ejecuta instrucciones de software, gestiona datos y realiza operaciones Lógicas / Aritméticas de código binario.</td><td>Es un circuito integrado, se caracteriza por su velocidad de reloj (GHz) y el procesamiento de varios núcleos e instrucciones.<br>- Su arquitectura se basa en bits.<br>- Su consumo en vatios.<br>- Algunos traen gráficos integrados.</td><td>La compatibilidad se establece según el socket de la placa base, chipset y la versión del BIOS.</td></tr>
+</table>
+<p><b>Núcleos:</b> El trabajador físico, procesa info en paralelo y puede tener 2, 4, 8 o más núcleos, funciona por hilos, que es la división de trabajo.</p>
+<p><b>Velocidad de Reloj:</b> Es la velocidad que indica cuántos ciclos hace el microprocesador por segundo. 1 GHz = mil millones de ciclos por segundo. La velocidad promedio es 1.6 - 3.8 GHz.</p>
+<img class="img" src="microprocesador.jpg" alt="Microprocesador">
+</div>
+
+</section>
+
+<!-- ===================== ABRIL ===================== -->
+<section class="mes" id="abril">
+
+<div class="card">
+<div class="f">Fecha: 1/4/26</div>
+<h3>Placa Madre</h3>
+<p><b>Actividad:</b> 1- Clasificar, identificar y describir todos los componentes electrónicos de una placa madre. 2- Para la próxima clase estudiar TODO de la carpeta, probable examen sorpresa.</p>
+<div class="ans">
+<p><b>Componentes identificados:</b></p>
+<img class="img" src="placa madre.jpg" alt="Diagrama de la placa madre" style="margin-top:0">
+<ul>
+<li><b>1- Batería CR2032:</b> Alimenta la placa madre, de litio y con 3v. CR: Litio. Primeros 2 dígitos: Mililitros de Litio. Segundos 2 dígitos: Grosor.</li>
+<li><b>2- Conectores USB:</b> Admiten 2 conectores USB del chasis de la placa madre.</li>
+<li><b>3- PCI Express:</b> Conectores para tarjetas de video.</li>
+<li><b>4- PCI 1 y 2:</b> Conectores universales para tarjetas de sonido, red, expansión.</li>
+<li><b>5- Conector TPM:</b> Almacena claves criptográficas para la protección de datos.</li>
+<li><b>6- Conectores PCIE:</b> Conectores modernos para dispositivos más pequeños como tarjetas de sonido.</li>
+<li><b>7- Conector COM:</b> Es un puerto serie, para cajas registradoras y demás.</li>
+<li><b>8- Conector de audio frontal:</b> Conector de auriculares, micrófono, etc.</li>
+<li><b>9- Controladores de bus:</b> Para dispositivos electrónicos (Fluye información de forma directa).</li>
+<li><b>10- CPU FAN:</b> Para conectar los sistemas de refrigeración.</li>
+<li><b>11- Conectores para periféricos externos</b></li>
+<li><b>12- Puerto VGA:</b> Conectores de video, tarjeta gráfica, etc.</li>
+<li><b>13- CMOS:</b> Alimentación autónoma del BIOS.</li>
+<li><b>14- Conector ATX-12V+:</b> Adicional de 8 pines en caso de alto consumo.</li>
+<li><b>15- Transistores MOSFET:</b> Módulo regulador del voltaje VRAM.</li>
+<li><b>16- Zócalo CPU:</b> Lugar donde descansa el CPU.</li>
+<li><b>17- Ranuras DIMM:</b> Tarjetas de memoria RAM.</li>
+<li><b>18- Conectores ATX:</b> Fuente de alimentación.</li>
+<li><b>19- Disipador (chipset debajo) del puente norte.</b></li>
+<li><b>20- Condensadores:</b> Absorben pulsos de la fuente de alimentación.</li>
+<li><b>21- Chipset del Puente Sur:</b> Encargado de los periféricos (A veces tiene disipador).</li>
+<li><b>22- Bobina:</b> Almacena y descarga.</li>
+<li><b>23- Conector ID:</b> Disco Duro.</li>
+<li><b>24- BIOS:</b> Sistema de arranque.</li>
+<li><b>25- Inductores:</b> Se opone a la corriente.</li>
+</ul>
+</div>
+</div>
+
+<div class="card">
+<div class="f">Fecha: 8/4/26</div>
+<h3>Aviso</h3>
+<p>Para la próxima clase investigar sobre los conectores del panel frontal de gabinete. Para la próxima clase estudiar para el oral TODO de la carpeta (En especial el diagrama).</p>
+</div>
+
+<div class="card">
+<div class="f">Fecha: 9/4/26</div>
+<h3>Conectores del Panel Frontal</h3>
+<p>Los conectores del panel frontal son un conjunto de pines donde se conectan los cables del gabinete del PC, para que funcionen el botón de encendido (POWER), botón de reinicio (Reset) y el conjunto de luces (Encendido y el disco).</p>
+<p><b>Colores de referencia:</b></p>
+<ul>
+<li>Verde: Led encendido</li>
+<li>Amarillo: LED del disco (HDD)</li>
+<li>Naranja: Botón de encendido</li>
+<li>Azul: Botón de reinicio</li>
+<li>Blanco/Negro: Tierra</li>
+</ul>
+</div>
+
+<div class="card">
+<div class="f">Fecha: 15/4/26</div>
+<h3>Aviso y Tipos de Disco Duro</h3>
+<p>Examen oral sobre los contenidos de la carpeta.</p>
+<p><b>Tipos de disco duro:</b></p>
+<ul>
+<li><b>HDD</b></li>
+<li><b>SSD:</b> M.2 SATA, M.2 NVMe (2 más rápidos) / SSD SATA (Lentos, compatibles) / SSD PCIe (Expansión)</li>
+<li><b>Formatos M.2 comunes:</b> 2280, 2260, 2242, 2930, 22110</li>
+</ul>
+</div>
+
+<div class="card">
+<div class="f">Fecha: 17/4/26</div>
+<h3>Actividad N°1: Diagnóstico por código POST – Reparación</h3>
+<table class="t">
+<tr><th>ITEM</th><th>DETALLE</th></tr>
+<tr><td>Falla reportada</td><td>“Al presionar el botón de encendido, los coolers giran 2 segundos y la PC se apaga sola, no hay pitidos. Al segundo intento pasa lo mismo.”</td></tr>
+<tr><td>Hipótesis principal</td><td>“Se sospecha de 2 componentes críticos, los cuales son la PSU y la Motherboard, lo cual explica el porqué no hay pitido, pues la BIOS no llega a iniciarse.”</td></tr>
+<tr><td>Descarte</td><td>“Descartamos la pila CMOS, puesto que es solo la encargada de guardar la configuración de la BIOS, incluso si no funciona la PC aún encendería.”</td></tr>
+<tr><td>Método propuesto</td><td>“Antes de abrir el equipo, revisaremos los toma corrientes, el cable CA, desconectaremos los periféricos para asegurar que no haya corto, trataremos de encenderla nuevamente y oleremos cerca de los puertos USB y la PSU, una vez abierta, haremos un puente para verificar la PSU.”</td></tr>
+<tr><td>Norma de seguridad</td><td>“Desconectaremos la electricidad de la PC, extraeremos la PSU, nos quitaremos la joyería que tengamos, nos atamos el pelo, evitamos usar ropa muy holgada y utilizamos una pulsera antiestática.”</td></tr>
+<tr><td>Solución teórica</td><td>“Realizaremos un mantenimiento a ambos componentes (Motherboard, PSU) para intentar rescatarlos, en caso contrario realizaremos el reemplazo.”</td></tr>
+</table>
+<div class="ans">
+<p><b>Respuestas a preguntas complementarias:</b></p>
+<p><b>1)</b> Los principales componentes sospechosos son la PSU y la motherboard. La PC no emite ningún pitido porque el BIOS no logra iniciarse.</p>
+<p><b>2)</b> La pila CMOS es la encargada de mantener la configuración de la BIOS. Cuando no funciona la PC sigue iniciando, pide F1, pero el internet no funciona, se desconfigura la fecha y hora, y por consecuente el navegador no funciona; esta no podría ser la causa porque no encaja en los síntomas.</p>
+<p><b>3) Pasos sin abrir el gabinete:</b> 1. Revisar el cable 220v (C.A). 2. Desconectar todos los periféricos USB para ver si no hay corto. 3. Prueba de olor.</p>
+</div>
+</div>
+
+<div class="card">
+<div class="f">Fecha: 22/04/26</div>
+<h3>Actividad 2: Análisis de compatibilidad – Instalación avanzada</h3>
+<table class="t">
+<tr><th>ITEM</th><th>DETALLE</th></tr>
+<tr><td>Solicitud</td><td>“El cliente nos solicita armar una PC con los siguientes componentes: CPU Intel I5-12400f, Mother Asus B660M, RAM 16GB DDR5 5200MHz, GPU RTX 3060 y una PSU genérica de 500w, y verificar compatibilidad.”</td></tr>
+<tr><td>Incompatibilidad 1</td><td>“RAM DDR5 incompatible con Mother DDR4, una solución es vender la RAM DDR5 16GB y comprar 2 RAM 8GB DDR4.”</td></tr>
+<tr><td>Incompatibilidad 2</td><td>“PSU Genérica 500w insuficiente para GPU RTX 3060, solución propuesta: reemplazar PSU por una con verificación 80Plus &gt; 650w.”</td></tr>
+<tr><td>Riesgo detectado</td><td>La PSU de “500w” puede llegar a quemar la GPU y la Motherboard puesto que solo brinda 30w reales y el sistema completo MÍNIMO necesita 300w.</td></tr>
+<tr><td>Normas aplicadas</td><td>“Verificar estándares de la fuente y no instalar componentes con riesgo, verificar lo mínimo y necesario que necesita cada componente.”</td></tr>
+</table>
+<div class="ans">
+<p><b>Respuestas del análisis:</b></p>
+<p><b>1)</b> Compatible porque el CPU utiliza un LGA1700 y la motherboard posee uno. El socket LGA1700 simplemente hace alusión a sus 1700 contactos.</p>
+<p><b>2)</b> Incompatible. Esta no funcionaría porque la motherboard B660M es compatible con DDR4 y la DDR5 simplemente no encastra.</p>
+<p><b>3)</b> La PSU NO es adecuada para la GPU y es peligrosa, puesto que la GPU utiliza 170w y el sistema completo 360w, el problema está en que la fuente genérica de “500w” solo da 30w reales y 300w máximo. Esto puede quemar la GPU y la placa madre. (OVP: Protección contra sobre voltaje, UVP: Protección contra bajo voltaje).</p>
+</div>
+</div>
+
+<div class="card">
+<div class="f">Fecha: 24/04/26</div>
+<h3>Actividad 3: Análisis de Rendimiento (Cuello de Botella)</h3>
+<img class="img" src="administrador de tareas.jpg" alt="Administrador de tareas">
+<table class="t">
+<tr><th>ITEM</th><th>DETALLE</th></tr>
+<tr><td>Síntoma</td><td>Fatiga general del sistema operativo.</td></tr>
+<tr><td>Diagnóstico</td><td>Cuello de botella de RAM. El sistema está realizando swapping en el disco.</td></tr>
+<tr><td>Causa raíz</td><td>RAM física insuficiente para la carga de trabajo.</td></tr>
+<tr><td>Solución inmediata</td><td>Cierre de aplicaciones para liberar RAM.</td></tr>
+<tr><td>Solución definitiva</td><td>Amplificación de RAM a 16GB totales.</td></tr>
+<tr><td>Norma aplicada</td><td>ISO 9241: Norma internacional de ergonomía y usabilidad. Su objetivo es que los programas sean cómodos de usar.</td></tr>
+</table>
+<div class="ans">
+<p><b>Respuestas del análisis:</b></p>
+<p><b>1)</b> El cuello de botella principal es la RAM. Fundamento: Aunque el disco esté al 100% es una consecuencia. La causa raíz es que la RAM está al 97%. El CPU está al 15%, es decir que no es fallo del procesador.</p>
+<p><b>2)</b> Al agotarse la RAM física, Windows mueve datos de la RAM a archivos de paginación en el disco. El disco se satura al 100% leyendo y escribiendo esos datos, que es 100 veces más lento que la RAM. Por eso se congela (Swapping).</p>
+<p><b>3) Soluciones ordenadas por costo:</b><br>1. Costo 0: Cerrar programas y pestañas, limitar inicio automático.<br>2. Costo Bajo: Optimizar Windows, desactivar efectos visuales, ajustar memoria virtual.<br>3. Costo Alto: Solución definitiva, ampliar RAM física, instalar 8 GB de RAM mínimo.</p>
+</div>
+</div>
+
+<div class="card">
+<div class="f">Fecha: 29/04/26</div>
+<h3>Actividad 4: Normas de seguridad eléctrica y ESD</h3>
+<table class="t">
+<tr><th>ITEM</th><th>DETALLE</th></tr>
+<tr><td>Tarea</td><td>Reemplazo de PSU (Power Supply Unit)</td></tr>
+<tr><td>Riesgos Identificados</td><td>Riesgo eléctrico: Electrocución por 220v. Riesgo ESD: Daño a componentes. Riesgo Mecánico: Corte con una chapa.</td></tr>
+<tr><td>Medidas preventivas</td><td>1. Desenergizar y verificar ausencia de tensión. 2. Uso de EPP y zona EPA. 3. No abrir PSU. 4. Verificar puesta a tierra del taller.</td></tr>
+<tr><td>Procedimiento</td><td>“Desconectar 220v (CA), colocarse pulsera, descargar la estática, desconectar cables ATX, CPU, PCI-E, retirar tornillos e instalar PSU.”</td></tr>
+<tr><td>Protocolo de emergencia</td><td>“Usar matafuegos clase C (Anti chispa-humo), ante electrocución cortar energía general y llamar a emergencia. NO TOCAR A LA VÍCTIMA.”</td></tr>
+</table>
+<div class="ans">
+<p><b>Respuestas de seguridad:</b></p>
+<p><b>1) Elementos de Protección Personal (EPP):</b><br>- Pulsera antiestática: Previene ESD en la placa madre.<br>- Calzado de seguridad dieléctrico: Aísla de descargas a tierra.<br>- Anteojos de seguridad: Protege de explosión de capacitores.</p>
+<p><b>2) Peligro de la PSU:</b> Nunca se abre porque los capacitores de la fuente primaria almacenan 300V DC incluso semanas después de desconectada. La descarga puede ser mortal.</p>
+<p><b>3) Falla de Disyuntor:</b> No rearmarlo inmediatamente, significa que hay una fuga de corriente. Inmediatamente se debe retirar la PSU y etiquetarla como “fuera de servicio” para después enviarla a un personal especializado.</p>
+</div>
+</div>
+
+</section>
+
+<!-- ===================== MAYO ===================== -->
+<section class="mes" id="mayo">
+
+<div class="card">
+<div class="f">Fecha: 6/5/26</div>
+<h3>Actividad 5: Ergonomía en el puesto técnico</h3>
+<table class="t">
+<tr><th>ITEM</th><th>DETALLE</th></tr>
+<tr><td>Puesto evaluado</td><td>Banco de preparación de notebooks.</td></tr>
+<tr><td>Incumplimiento Ley 19.587</td><td>Art 6: Altura de plano de trabajo inadecuado. Art 8: Silla no ergonómica. Art 10: Iluminación deficiente (&lt;500 lux).</td></tr>
+<tr><td>Riesgo para la salud</td><td>“Desarrollo de TME: Cervicalgia por elevación de hombros, síndrome del Túnel carpiano por flexión de muñeca. Fatiga visual.”</td></tr>
+<tr><td>Medidas correctivas</td><td>“Adecuar la altura de mesa a 72cm, proveer silla con 5 apoyos, regulable y apoyo lumbar. Instalar panel LED de 600x600 (Lux) de 40w.”</td></tr>
+</table>
+<div class="ans">
+<p><b>Respuestas de ergonomía:</b></p>
+<p><b>1) Errores identificados:</b><br>- Altura de plano de trabajo: 90 cm es para trabajo de pie. Para sentado debe ser 70-75 cm. Obliga a levantar los hombros.<br>- Silla: Sin respaldo ni apoyo lumbar, no permite mantener la correcta postura de la columna (Curva Lordótica).<br>- Iluminación: Las sombras generan fatiga visual y obligan a posturas forzadas para ver.</p>
+<p><b>2) Relación con TME:</b> Los TME son lesiones en músculos, tendones y nervios por posturas forzadas. Con una mesa de 90 cm, usted debe flexionar las muñecas hacia arriba para tipear, comprimiendo el túnel carpiano. Esto causa inflamación y dolor, pudiendo derivar en el “síndrome del túnel carpiano”.</p>
+<p><b>3) Correcciones:</b> 1- Bajar la mesa o usar una silla regulable en altura para que los codos queden en 90°. 2- Proveer silla ergonómica con apoyo lumbar regulable y apoya brazos. 3- Instalar iluminación “Led de 500 lux +” sin sombras, con luz difusa desde arriba.</p>
+</div>
+</div>
+
+<div class="card">
+<div class="f">Fecha: 13/5/26</div>
+<h3>Hardware Stressing</h3>
+<p><b>Concepto:</b> Proceso de someter componentes informáticos a condiciones extremas de trabajo para evaluar estabilidad, rendimiento o determinar el punto de falla.</p>
+<p><b>Programas recomendados:</b> Prime95, Furmark, HWMonitor.</p>
+<div class="ans">
+<p><b>Actividades resueltas en clase:</b></p>
+<p><b>Act 1:</b> Para mí sería importante no solo para conocer los límites de la computadora usada, sino para evaluar el estado en que se encuentran los componentes en base al resultado de la prueba. Ej: Realizo una prueba para ver si soporta programas pesados de X disciplina, como la arquitectura.</p>
+<p><b>Act 2 (Caso de las 10 PC):</b> Fallaron en detectar fallos físicos latentes antes del uso cotidiano y la verificación de la eficiencia real de los sistemas de configuración. Mi recomendación es extraer las 5 computadoras y realizarles una prueba de estrés a cada una para identificar el problema.</p>
+<p><b>Act 3 (Relación de fallas):</b><br>1. La pantalla muestra fallas y texturas deformadas en un entorno 3D → GPU.<br>2. El SO se tilda por completo al procesar una tarea de cálculo gigante → CPU.<br>3. La PC se apaga por completo y se apaga sin previo aviso de error → PSU.</p>
+<img class="img" src="furmark.jpg" alt="FurMark">
+</div>
+<p><b>Protocolo de seguridad (Informe de 3 pasos):</b></p>
+<p><b>1- Verificación física y térmica del equipo:</b> Revisar que los ventiladores funcionen correctamente, verificar que no haya acumulación excesiva de polvo y controlar las temperaturas iniciales del CPU y GPU mediante el sistema de monitoreo.</p>
+<p><b>2- Protección de datos y estabilidad eléctrica:</b> Guardar y cerrar todos los datos importantes, cerrar programas innecesarios en segundo plano y realizar copia de seguridad del sistema.</p>
+<p><b>3- Configuración y control del software de estrés:</b> Seleccionar el componente a evaluar (CPU, GPU, RAM, PSU), configurar duración inicial corta para pruebas preliminares y utilizar las herramientas de monitoreo en tiempo real.</p>
+</div>
+
+<div class="card">
+<div class="f">Fecha: 29/5/26</div>
+<h3>Guía de programas y Registro Térmico</h3>
+<ul>
+<li><b>Prime95:</b> Exigencia máxima de CPU y memoria RAM mediante cálculos matemáticos.</li>
+<li><b>FurMark:</b> Diagnóstico para la GPU que utiliza renderizado 3D de alta densidad (anillo peludo).</li>
+<li><b>HWMonitor:</b> Registra en tiempo real voltajes, velocidades de ventiladores y temperaturas.</li>
+</ul>
+<p><b>Diagrama de flujo seguro para pruebas:</b></p>
+<p>1. Ejecutar HWMonitor como administrador → 2. Verificar temperatura en reposo → 3. Ejecutar FurMark → 4. Configurar la resolución nativa del monitor → 5. Hacer clic en “GPU Stress Test” y “GO!” → 6. Monitorear de 10-15 min (¿Supera los 90°C o hay fallas? SI -&gt; Presionar ESC de inmediato / NO -&gt; Continuar) → 7. Presionar ESC luego de finalizar → 8. Dejar HWMonitor abierto por 10 min para enfriamiento → 9. Cerrar HWMonitor.</p>
+<p><b>Planilla de Registro de Datos (Caso Práctico Registrado):</b></p>
+<table>
+<tr><th>Componente evaluado</th><th>Software utilizado</th><th>Temp. Inicial (Reposo)</th><th>Temp. Máxima (5 min)</th><th>Temp. Estable (10 min)</th><th>Temp. Post-Prueba (Enfriamiento)</th><th>Estado del equipo</th></tr>
+<tr><td>CPU</td><td>Prime95</td><td>40°C</td><td>72°C</td><td>78°C</td><td>45°C</td><td>Prueba aprobada</td></tr>
+</table>
+</div>
+
+</section>
+
+<!-- ===================== JUNIO ===================== -->
+<section class="mes" id="junio">
+
+<div class="card">
+<div class="f">Fecha: 08/06/26</div>
+<h3>Actividad 6: Redes y direccionamiento IP</h3>
+<table class="t">
+<tr><th>ITEM</th><th>DETALLE</th></tr>
+<tr><td>Incidencia</td><td>Pérdida de conectividad en PC N°2 y PC N°10. Diagnóstico: IP duplicada 192.168.1.10.</td></tr>
+<tr><td>Causa raíz</td><td>Asignación de IP estática dentro del rango del DHCP. Falla de administración de red. Liberación y renovación de IP vía CMD.</td></tr>
+<tr><td>Protocolo de solución</td><td>Verificación de conectividad con ping 8.8.8.8. Acceso al router para crear reservas DHCP de IP para la PC N°2.</td></tr>
+<tr><td>Prevención</td><td>Documentar todas las IP estáticas. Excluir el rango .2 a .20 del DHCP para uso de servidores e impresoras. Capacitar al personal.</td></tr>
+<tr><td>Normas applied</td><td>IEEE 802.3: Estándar Ethernet. Buenas prácticas de administración de LAN.</td></tr>
+</table>
+<div class="ans">
+<p><b>Respuestas del área de redes:</b></p>
+<p><b>1) Problema:</b> Conflicto de IP. Definición: Es un error de red de capa 3 (Red) del modelo OSI / TCP. Ocurre cuando 2 o más dispositivos de la misma LAN intentan usar la misma IP y el switch no sabe a quién entregar los paquetes, dejando a ambos equipos sin conectividad.</p>
+<p><b>2) Causas posibles:</b><br>1) Falla de DHCP: El servidor DHCP del router asignó la .10 a la PC N°10, sin detectar que ya estaba en uso (sucede si el lease time expiró).<br>2) IP manual: Alguien configuró la PC N°2 con IP estática 192.168.1.10 y el DHCP la entregó a otra PC porque no sabía que estaba ocupada.</p>
+<p><b>3) Solución del técnico:</b><br>- <i>Solución inmediata:</i> En la PC N°10 ejecutar en CMD los comandos <code>ipconfig /release</code> y <code>ipconfig /renew</code> para pedir una IP nueva al DHCP.<br>- <i>Solución definitiva:</i> Ingresar al router, en la configuración del DHCP crear una reserva de IP para la PC N°2, asociando su dirección MAC a la IP 192.168.1.10. Así el DHCP nunca la entregará a otro equipo.</p>
+<img class="img" src="IP-Conflict.jpg" alt="Error: conflicto de dirección IP">
+</div>
+</div>
+
+<div class="card nota">
+<div class="f">Evaluación Teórica Final</div>
+<h3>Respuestas del Examen del Cuatrimestre</h3>
+<div class="ans">
+<p><b>1. Si ustedes definen el concept de "estresamiento de hardware", ¿Cuál es la descripción más precisa?</b><br>Marcada: b) El proceso de exigir los componentes al 100% de su capacidad bajo condiciones controladas.</p>
+<p><b>2. Durante una auditoría técnica en una empresa, ¿Cuál de los siguientes motivos justifica que ustedes realicen una prueba de esfuerzo?</b><br>Marcada: b) Detectar fallas físicas ocultas y verificar la eficiencia de la refrigeración antes de usar los equipos.</p>
+<p><b>3. Si una computadora se apaga por completo y de golpe (sin mostrar pantallas de error) a los pocos minutos de iniciar un test de estrés general, ¿Qué componente deben sospechar ustedes que está fallando principalmente?</b><br>Marcada: c) PSU o protección térmica.</p>
+<p><b>4. ¿Cuál es el orden metodológico correcto que ustedes deben seguir para ejecutar una prueba de diagnóstico segura en el laboratorio?</b><br>Marcada: b) Abrir el software de monitoreo (HWMonitor), registrar la temperatura inicial, iniciar el programa de estrés y controlar los valores en tiempo real.</p>
+<p><b>5. Al analizar la planilla de registro de datos de un test de CPU, ustedes notan que la temperatura escaló de 40°C a 98°C en menos de 30 segundos ¿Qué acción técnica inmediata deben tomar?</b><br>Marcada: c) Abortar la prueba inmediatamente para evitar un daño permanente por sobrecalentamiento.</p>
+</div>
+</div>
+
+<div class="card fin">
+<div class="f">Fecha de entrega: 19/06/26</div>
+<h3>Actividad final para acreditar la materia</h3>
+<p>De forma individual elaborar una presentación multimedia sobre todos los temas vistos en el cuatrimestre.</p>
+</div>
+
+</section>
+</main>
+
+<button id="volver" type="button" aria-label="Volver al principio del mes">↑ Volver</button>
+
+<script>
+(function(){
+  var header=document.querySelector('header');
+  var tabs=document.querySelectorAll('nav button');
+  var meses=document.querySelectorAll('.mes');
+  var volver=document.getElementById('volver');
+
+  function medir(){document.documentElement.style.setProperty('--hh',header.offsetHeight+'px');}
+  medir();window.addEventListener('resize',medir);
+
+  function mesActual(){return document.querySelector('.mes.on');}
+  function irAlInicio(suave){
+    var m=mesActual();
+    var y=m.getBoundingClientRect().top+window.pageYOffset-header.offsetHeight-10;
+    window.scrollTo({top:Math.max(0,y),behavior:suave?'smooth':'auto'});
+  }
+
+  tabs.forEach(function(b){
+    b.addEventListener('click',function(){
+      tabs.forEach(function(t){t.classList.toggle('on',t===b);});
+      meses.forEach(function(m){m.classList.toggle('on',m.id===b.dataset.m);});
+      irAlInicio(false);
+    });
+  });
+
+  // Botón Volver: lleva al principio del mes que está abierto
+  volver.addEventListener('click',function(){irAlInicio(true);});
+
+  // Imágenes: si todavía no existe el archivo, se muestra un recuadro con su nombre
+  document.querySelectorAll('img.img').forEach(function(img){
+    img.addEventListener('error',function(){
+      var d=document.createElement('div');
+      d.className='img ph';
+      d.textContent='Falta la imagen: '+img.getAttribute('src');
+      if(img.getAttribute('style'))d.setAttribute('style',img.getAttribute('style'));
+      img.replaceWith(d);
+    });
+  });
+})();
+</script>
+</body>
+</html>
